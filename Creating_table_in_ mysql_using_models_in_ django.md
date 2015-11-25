@@ -6,6 +6,8 @@ Reflecting changes of models.py in sql database(Creating table in mysql using mo
 
 * sudo -u www-data /edx/bin/python.edxapp ./manage.py lms schemamigration student --initial --settings aws 
 
+* sudo -u www-data /edx/bin/python.edxapp ./manage.py lms schemamigration student --auto --settings aws
+
 * sudo -u www-data /edx/bin/python.edxapp ./manage.py lms migrate student 0001_initial --fake --settings aws 
 * sudo gedit /edx/app/edxapp/edx-platform/common/djangoapps/student/models.py 
 
